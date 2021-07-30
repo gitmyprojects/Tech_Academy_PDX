@@ -6,7 +6,11 @@ from django.shortcuts import render, redirect
 # the views.py file
 
 def home(request): # 'request is what is entered in the browser bar
-    return render(request, 'home.html') # the string goes into the tacocat_app dir and gets the index.html
+    user = request.user
+    context = {
+        'user': user,
+    }
+    return render(request, 'home.html', context) # the string goes into the tacocat_app dir and gets the index.html
 # file
 # the reason the template folder doesnt have to be explicitly named is because the html file is in the same dir as
 # the app. django recognizes its relativity.

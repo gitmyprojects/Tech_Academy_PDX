@@ -3,13 +3,21 @@ import http
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import UserForm
 from .models import User
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
+
 
 def join(request):
     return render(request, 'join.html')
 
 def confirmation(request):
-    return render(request, 'new_user_confirmation.html')
+    user = request.user
+    context = {
+        'user': user,
+    }
+    # by adding 'context' i make it available when the page is rendered after the method is called
+    # being available means that i can display the value stored in the dictionary when i call the key
+    # using two curly braces
+    return render(request, 'new_user_confirmation.html', context)
 
 def createUser(request):
     form = UserForm(request.POST or None)

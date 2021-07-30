@@ -6,7 +6,7 @@
 * connect the login to the database
     -it is connected, however, how do i know when im logged in or out?
 * An error message was triggered when creating a new user but I only see it in the terminal, not the page.
-* add project to gitgub
+*^ add project to gitgub
     add adam/ryhan as collaborators.
 * add a button to the 'join the debate' section to take them to the newuser page
 * add discussion board to each debate page
@@ -24,10 +24,8 @@
     different point levels.
         - should there be points just for voting?
     - I imagine JS and or jquery would be used to automatically update this board periodically
-* Add a "Hello, 'user'" to the upper right corner to show whether or not you are logged in.
+*^ Add a "Hello, 'user'" to the upper right corner to show whether or not you are logged in.
     ? How does it know which user is logged in?
 *^ Add new user confirmation page
     ? can i redirect after a set amount of time?
 *^ Correct the HttpResponseRedirect for the createuser page. It needs to confirm the submission.
-* how do i embed an httpresponse to welcome the user?
-    -this is covered somewhere in the course, i think the django hotel/ university project
