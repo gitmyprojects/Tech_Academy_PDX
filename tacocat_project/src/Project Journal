@@ -1,0 +1,27 @@
+Sunday 7/18 - Tuesday 7/20
+I came up with a concept and wrote every idea down on paper. My thoughts are a bit scattered so I didnt attempt to justify any. I just wrote down whatever came to mind. I used several pages that would ultimately be the pages of the site. When I had an idea for that site page, I would write it down on the approprite binder page.
+I spent Monday and Tuesday applying the concept to the live project structure (django). At the end of the day I was back to story #2 which is where I was stuck on the live project.
+
+Wednesday 7/21
+The site is operating on both the front and back end (admin). I am able to apply CRUD. Now, I'm applying styling via bootstrap. The site is taking shape and as it is, more ideas come to mind.
+
+Thursday - Saturday 7/24
+I hit a bit of a wall. The structure of each page is set. I've successfully added cards to the base.html file so they appear on every page. I added a card in the middle of each page where it is needed. The problem that I am facing is that when i add text to the middle card, it moves; specifically over the title of the page.
+I am also getting too far away from the point of the exercise. The point wasn't to build a site but to apply what i learned on the course and see where my roadblocks are. I think i need to take a step back, pick ONE thing, and work on that.
+I started adding items and went back to the course but i once again found myself getting frustrated and deterred by the instruction.
+
+Sunday 7/25
+I should add topics on the back end so i can start applying them to the cooresponding html page.
+somehow the manage.py file is gone. I will need to rebuild from scratch.
+
+Moday 7/26
+At startup, my static pages are no longer loading. Before i signed off the previous day, they were.
+I've discovered that I struggle with folder structure. It has cause a lot of confusion in django
+
+Wednesday 7/28
+Had a lot of success. I added a member login option to the navbar.
+
+Thursday 7/29
+Added a journal and todo page inside of the project to stay more organized.
+It looks like the HttpResponseRedirect is not working correctly. It need to confirm the submission.(fixed)
+

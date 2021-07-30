@@ -1,0 +1,35 @@
+{% include "base.html" %}
+
+{% block title %}Create New User{% endblock %}
+
+
+{% block content %}
+
+<div class="center-card">
+    <div class="card border-primary mb-3 position-absolute top-50 start-50 translate-middle" style="width: 40rem;"> <!--come back to this class.make it opaque-->
+      <div class="card-body">
+        <h5 class="card-title">Sign-Up</h5>
+            <div class="admin_panel">
+                <form method="POST" action="{% url 'createuser' %}">
+                    <div class="frmObject_container">
+                        <!-- Cross Site Request Forgery (csrf_token) protection -->
+                        {% csrf_token %}
+                        <!-- This will return an erros if one of the fields is left blank in error-->
+                        {{ form.non_field_errors }}
+                        <!--as_p means as a paragraph tag-->
+                        {{ form.as_p }}
+                    </div>
+                    <div class="frmBtn_container">
+                        <input type="submit" class="btn" value="Create New User" name="Save_User">
+                        <!-- if they click the button they will be sent back to the home url--->
+                        <a href="{% url 'home' %}"><button type="button" class="btn" value="Cancel">Cancel</button></a>
+                    </div>
+                </form>
+            </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+{% endblock %}

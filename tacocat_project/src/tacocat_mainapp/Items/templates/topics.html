@@ -1,0 +1,36 @@
+{% include 'base.html' %}
+{% load static %}
+
+<div class="text-center">
+    <h1 class="text-primary my-5">Topics</h1>
+</div>
+
+
+<div class="center-card">
+    <div class="card border-primary mb-3 position-absolute top-50 start-50 translate-middle" style="width: 40rem;"> <!--come back to this class.make it opaque-->
+      <div class="card-body">
+        <h5 class="card-title">Topics</h5>
+        <p class="card-text">
+            <ul>
+                <li>Placeholder</li>
+            </ul>
+        </p>
+      </div>
+    </div>
+</div>
+
+
+<!-- I might want to use the code below at a later date if I want users to submit suggestions-->
+<!--
+<div id="item-form">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="text">
+        <button id="new-item-button" type="submit" name="Save_Item"><a href="{% url 'topics' %}">Create Topic</a></button>
+    </form>
+</div>
+-->
+
+
+
